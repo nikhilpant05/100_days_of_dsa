@@ -16,7 +16,7 @@ int main(){
     arr[pos-1]=x;
     n++;
     for(i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     return 0;
 }
