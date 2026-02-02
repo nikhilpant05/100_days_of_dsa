@@ -10,10 +10,10 @@ int main(){
     }
     scanf("%d",&pos);
     scanf("%d",&x);
-    for(i=n-1;i>pos-1;i--){
+    for(i=n-1;i>=pos-1;i--){
         arr[i+1]=arr[i];
     }
-    arr[pos]=x;
+    arr[pos-1]=x;
     n++;
     for(i=0;i<n;i++){
         printf("%d",arr[i]);
