@@ -3,15 +3,15 @@ Shift existing elements to the right to make space*/
 
 #include<stdio.h>
 int main(){
-    int arr[50],n,i,pos,x;
+    int arr[50],n,i,x,pos;
     scanf("%d",&n);
     for(i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&pos);
     scanf("%d",&x);
-    for(i=n-1;i>=pos-1;i--){
-        arr[i+1]=arr[i];
+    for(i=n;i>=pos;i--){
+        arr[i]=arr[i-1];
     }
     arr[pos-1]=x;
     n++;
