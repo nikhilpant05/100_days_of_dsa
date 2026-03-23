@@ -66,4 +66,4 @@ int main() {
     scanf("%d %d", &p, &q);
     printf("%d", findLCA(root, p, q));
     return 0;
-}
+}// commit 51
